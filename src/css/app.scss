@@ -12,6 +12,23 @@ body.body--dark {
   border-radius: 50%;
 }
 
+// PageSection.vue
+.page-section {
+  border-radius: 12px;
+}
+
+body.body--light {
+  .page-section {
+    background-color: $white;
+  }
+}
+
+body.body--dark {
+  .page-section {
+    background-color: $dark;
+  }
+}
+
 // HeaderLayout.vue
 .toolbar {
   color: $grey-5;
