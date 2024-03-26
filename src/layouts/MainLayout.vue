@@ -18,7 +18,7 @@
 <script setup>
 import { ref } from "vue";
 import HeaderLayout from "./HeaderLayout.vue";
-import NavigationMenuDrawer from "./NavigationmenuDrawer.vue";
+import NavigationMenuDrawer from "./NavigationMenuDrawer.vue";
 
 const drawer = ref(false);
 

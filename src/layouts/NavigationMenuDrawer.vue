@@ -4,7 +4,8 @@
     show-if-above
     :mini="!drawerModel || miniState"
     @click.capture="drawerClick"
-    :width="300"
+    width="300"
+    mini-width="75"
     :overlay="false"
     bordered
     class="navigation-drawer"
@@ -13,7 +14,11 @@
       <q-list class="q-pa-lg">
         <q-item clickable v-ripple>
           <q-item-section avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
+            <img
+              src="https://cdn.quasar.dev/logo-v2/svg/logo.svg"
+              width="32px"
+              height="32px"
+            />
           </q-item-section>
 
           <q-item-section class="text-h6">Quasar Framework</q-item-section>
@@ -121,26 +126,3 @@ const drawerClick = (e) => {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-body.body--light {
-  .navigation-drawer {
-    background-color: white;
-  }
-  .menu-icon {
-    background-color: $light-page;
-  }
-}
-body.body--dark {
-  .navigation-drawer {
-    background-color: $dark;
-  }
-  .menu-icon {
-    background-color: $dark-page;
-  }
-}
-
-.menu-item {
-  border-radius: 12px;
-}
-</style>

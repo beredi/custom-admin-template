@@ -1,4 +1,3 @@
-// app global css in SCSS form
 body.body--light {
   background-color: $light-page;
   color: $light-text;
@@ -7,4 +6,49 @@ body.body--light {
 body.body--dark {
   background-color: $dark-page;
   color: $dark-text;
+}
+.toolbar {
+  color: $grey-5;
+}
+
+// HeaderLayout.vue
+body.body--light {
+  .toolbar {
+    background-color: #ffffff;
+  }
+  .button-header {
+    color: $grey-9;
+  }
+}
+body.body--dark {
+  .toolbar {
+    background-color: $dark;
+  }
+}
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+// NavigationMenuDrawer.vue
+body.body--light {
+  .navigation-drawer {
+    background-color: white;
+  }
+  .menu-icon {
+    background-color: $light-page;
+  }
+}
+body.body--dark {
+  .navigation-drawer {
+    background-color: $dark;
+  }
+  .menu-icon {
+    background-color: $dark-page;
+  }
+}
+
+.menu-item {
+  border-radius: 12px;
 }
