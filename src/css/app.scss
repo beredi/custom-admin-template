@@ -7,24 +7,56 @@ body.body--dark {
   background-color: $dark-page;
   color: $dark-text;
 }
+
+.profile-image {
+  border-radius: 50%;
+}
+
+// HeaderLayout.vue
 .toolbar {
   color: $grey-5;
 }
 
-// HeaderLayout.vue
+.header-menu-dropdown {
+  border-radius: 12px;
+}
+
+.notification-close-button {
+  display: none;
+}
+
+.notification-row {
+  &:hover {
+    .notification-close-button {
+      display: flex;
+    }
+  }
+}
+
+.notification-new {
+  width: 10px;
+  height: 10px;
+  background-color: $accent;
+  border-radius: 50%;
+}
+
 body.body--light {
-  .toolbar {
-    background-color: #ffffff;
+  .toolbar,
+  .header-menu-dropdown {
+    background-color: $white;
   }
   .button-header {
     color: $grey-9;
   }
 }
+
 body.body--dark {
-  .toolbar {
+  .toolbar,
+  .header-menu-dropdown {
     background-color: $dark;
   }
 }
+
 .notification-badge {
   position: absolute;
   top: 0;
@@ -34,7 +66,7 @@ body.body--dark {
 // NavigationMenuDrawer.vue
 body.body--light {
   .navigation-drawer {
-    background-color: white;
+    background-color: $white;
   }
   .menu-icon {
     background-color: $light-page;
