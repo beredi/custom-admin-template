@@ -30,6 +30,7 @@
       </q-btn>
       <q-btn flat round class="button-header">
         <q-icon name="grid_view" />
+        <shortcuts-menu></shortcuts-menu>
       </q-btn>
       <q-btn icon="notifications" class="button-header" flat round>
         <q-badge
@@ -60,6 +61,7 @@ import { ref } from "vue";
 import NotificationsMenu from "./components/NotificationsMenu.vue";
 import LanguageMenu from "./components/LanguageMenu.vue";
 import ProfileMenu from "./components/ProfileMenu.vue";
+import ShortcutsMenu from "./components/ShortcutsMenu.vue";
 const props = defineProps(["drawer"]);
 const emits = defineEmits(["toggleLeftDrawer"]);
 

@@ -63,6 +63,24 @@ body.body--dark {
   right: 0;
 }
 
+// ShortcutsMenu.vue
+
+.shortcut-button {
+  border-radius: 50%;
+}
+body.body--light {
+  .shortcut-button {
+    background-color: $grey-2;
+    color: $dark;
+  }
+}
+body.body--dark {
+  .shortcut-button {
+    background-color: $grey-8;
+    color: $white;
+  }
+}
+
 // NavigationMenuDrawer.vue
 body.body--light {
   .navigation-drawer {

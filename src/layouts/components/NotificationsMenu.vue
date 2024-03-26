@@ -7,7 +7,7 @@
     <div style="min-width: 360px">
       <div class="row no-wrap q-pa-md justify-between items-center">
         <span class="text-h6">Notifications</span>
-        <q-btn icon="mark_email_read" flat>
+        <q-btn icon="mark_email_read" flat size="sm">
           <q-tooltip> Mark all as read </q-tooltip></q-btn
         >
       </div>
