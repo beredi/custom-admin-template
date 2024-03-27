@@ -8,8 +8,8 @@
       <q-item
         clickable
         v-close-popup
-        @click="changeLanguage('en')"
-        :class="activeLocale === 'en' ? 'bg-accent text-white' : null"
+        @click="changeLanguage('en-US')"
+        :class="activeLocale === 'en-US' ? 'bg-accent text-white' : null"
       >
         <q-item-section>English</q-item-section>
       </q-item>
