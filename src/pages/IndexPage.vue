@@ -1,7 +1,7 @@
 <template>
   <page-layout>
     <page-section class="col-12">
-      <h1 class="text-h5 q-px-none q-py-xs">Custom admin template</h1>
+      <h1 class="text-h5 q-px-none q-py-xs">{{ $t("dashboard") }}</h1>
     </page-section>
     <page-section class="col-4">
       <q-icon name="sentiment_satisfied_alt" color="warning" size="lg" />
